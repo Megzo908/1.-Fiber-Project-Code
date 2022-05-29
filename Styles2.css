@@ -1,0 +1,170 @@
+* {
+    font-family: inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    padding: 0px 10%;
+    margin-top: 0;
+}
+
+
+
+header{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+input{
+    font-size: 16px;
+}
+
+label{
+    font-weight: bold;
+    font-size: larger;
+}
+
+label[for=terms]{
+    font-weight: normal;
+    display: inline-block;
+    width: 75%;
+    text-align: start;
+}
+
+#Name,
+#Email,
+#Password{
+    height: 40px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#terms{
+    width: 16px;
+    height: 16px;
+}
+
+.Signuppage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headercreate{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+label[for=terms] a,
+.already a{
+    color: #4d13d1;
+    font-weight: bold;
+    text-underline-position: under;
+}
+
+.already a{
+    text-decoration: none;
+}
+
+.createaccount{
+    background-color: #4d13d1;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    width: 75%;
+    height: 50px;
+    font-size: large;
+    margin-top: 20px;
+}
+
+button.createaccount{
+    color: white;
+}
+
+button.createaccount:hover{
+    background-color: #2f0590;
+    cursor: pointer;
+}
+
+header a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.already a:hover{
+    text-decoration: underline;
+}
+
+.already{
+    width: 75%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Signupimages{
+    background-color: #4d13d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.unparalleledtemplates{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.crafted{
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signupimg{
+    width: 500px;
+    height: 420px;
+    object-fit:contain;
+}
+
+.togglepassword:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1160px) {
+    .Signupimages{
+        display: none;
+    }
+    label[for=terms]{
+        font-size: 14px;
+    }
+    #terms{
+        width: 14px;
+        height: 14px;
+    }
+
+}
+
+@media (max-width: 365px) {
+    button.createaccount{
+        font-size: 14px;
+    }
+    label[for=terms]{
+        font-size: 12px;
+    }
+    #terms{
+        width: 12px;
+        height: 12px;
+    }
+
+}
