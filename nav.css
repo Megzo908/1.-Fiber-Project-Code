@@ -1,0 +1,174 @@
+* {
+  font-family: inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 10%;
+  background-color: #fbf8f3;
+}
+
+.biglogo,
+.navbar,
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  margin-right: auto;
+}
+
+.navsticky {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar,
+.login {
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navbar li a,
+.login a,
+.signup a,
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup a {
+  color: #fbf8f3;
+}
+
+.signup {
+  background-color: #4d14d2;
+  border-radius: 5px;
+  padding: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.navbar li {
+  padding: 0 20px;
+}
+
+.login {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar li:hover {
+  text-decoration: underline #fbf8f3;
+}
+
+.login:hover {
+  text-decoration: underline #fbf8f3;
+}
+
+.signup:hover {
+  cursor: pointer;
+  background-color: #2f0590;
+}
+
+.star {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 800px) {
+  .biglogo,
+  .navbar,
+  .buttons {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .buttons {
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: flex-end;
+  }
+
+  .login a,
+  .signup a {
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  .navbar,
+  .buttons {
+    display: none;
+  }
+
+  .navbar li {
+    width: fit-content;
+    text-align: right;
+  }
+
+  .navbar li a {
+    color: black;
+  }
+
+  .navbar li:hover {
+    cursor: pointer;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .burger.active {
+    display: flex;
+  }
+
+  .buttons.active {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
